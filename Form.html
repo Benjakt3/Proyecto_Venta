@@ -1,0 +1,65 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="design.css" />
+    <script src="vue.js"></script>
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Ingreso de Datos</h1>
+    <br>
+    <div class="informacion">
+        <form id="contact-us" method="post" action="#">
+            <!-- Ingreso de datos -->
+            <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                <!-- Nombre -->
+                <input type="text" name="nombre" id="name" required="required" class="form" placeholder="Nombre" />
+                <!-- Apellido -->
+                <input type="text" name="apellido" id="ap" required="required" class="form" placeholder="Apellido" />
+                <!-- Rut -->
+                <input type="text" name="rut" id="rt" required="required" class="form" placeholder="Rut" />
+                <!-- Region -->
+                <p>Ciudad</p>
+                <select name="Region">
+                    <option value="1">I</option>
+                    <option value="2">II</option>
+                    <option value="3">II</option>
+                    <option value="4">III</option>
+                    <option value="5">IV</option>
+                    <option value="6">V</option>
+                    <option value="7">VI</option>
+                    <option value="8">VII</option>
+                    <option value="9">IX</option>
+                    <option value="10">X</option>
+                    <option value="11">XI</option>
+                    <option value="12">XII</option>
+                    <option value="13">XIII</option>
+                    <option value="14">XIV</option>
+                    <option value="15">XV</option>
+                    <option value="16">XVI</option>
+                </select>
+                <br><br>
+                <!-- Ciudad -->
+                <input type="text" name="ciudad" id="city" required="required" class="form" placeholder="Ciudad" />
+                <!-- Calle -->
+                <input type="text" name="calle" id="st" required="required" class="form" placeholder="Calle" />
+                <!-- Numero de telefono -->
+                <input type="text" name="telefono" id="tf" required="required" class="form"
+                    placeholder="Numero de telefono" />
+                <!-- Email -->
+                <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+            </div>
+            <div class="relative fullwidth col-xs-12">
+                <!-- Boton de envio -->
+                <button type="submit" id="submit" name="submit" class="form-btn semibold">
+                    Guardar Datos
+                </button>
+            </div>
+        </form>
+</body>
+
+</html>
